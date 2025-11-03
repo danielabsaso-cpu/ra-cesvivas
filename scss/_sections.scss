@@ -1,0 +1,125 @@
+section {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.bienvenidos { background-color: #f0fff0; }
+.conocer { background-color: #d6f5d6; }
+.novedades { background-color: #eafaea; text-align: center; }
+.contacto-rapido { background-color: #fdfdfd; text-align: center; }
+/* Catálogo (grid) */
+.lista-catalogo {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+gap: 20px;
+list-style: none;
+padding: 0;
+margin: 20px 0 0;
+}
+.lista-catalogo li {
+background: #fff;
+border-radius: 12px;
+padding: 16px;
+box-shadow: 0 4px 10px rgba(0,0,0,.06);
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.lista-catalogo img {
+width: 100%;
+aspect-ratio: 4 / 3;
+object-fit: cover;
+border-radius: 8px;
+display: block;
+}
+.lista-catalogo h3 {
+margin: 6px 0 0;
+color: primary-green; font-size: 1.05rem; } .lista-catalogo p { margin: 6px 0 0; color: dark-text;
+font-size: 0.95rem;
+line-height: 1.45;
+}
+/* Galería (grid)*/
+.galeria-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+gap: 16px;
+}
+.galeria-grid img {
+width: 100%;
+aspect-ratio: 4 / 3;
+object-fit: cover;
+border-radius: 10px;
+display: block;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.galeria-grid img:hover {
+transform: scale(1.03);
+box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+/* Responsive */
+@media (max-width: $bp-mobile) {
+.lista-catalogo {
+grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+.galeria-grid {
+grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+}
+.grid-galeria { @extend .galeria-grid; }
+// Contactos
+.seccion-contacto {
+    background-color: $lighter-green;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+.contenedor-contacto {
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+        h2 {
+        color: $primary-green;
+        text-align: center;
+        margin-bottom: 25px;
+        }
+        label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: $primary-green;
+        }
+        input, textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background: #f9fff9;
+        &:focus {
+        border-color: $accent-green;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba($accent-green, 0.2);
+        }
+        }
+    .boton-contacto {
+    background: $accent-green;
+    color: $white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+        background: $secondary-green;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    }
+}
+}

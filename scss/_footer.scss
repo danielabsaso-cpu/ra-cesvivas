@@ -1,0 +1,18 @@
+footer {
+  background-color: $primary-green; color: $white; text-align: center;
+  padding: 20px; margin-top: 40px; font-family: $font-base; line-height: 1.5;
+
+  p { margin: 5px 0; }
+  a {
+    color: #ffe695; text-decoration: none; @include transition-simple;
+    &:hover { text-decoration: underline; color: #b2ff74; }
+  }
+}
+.redes {
+  margin-top: 10px;
+  a {
+    color: $white; font-size: 24px; margin: 0 10px; display: inline-block;
+    @include transition-simple;
+    &:hover { color: $accent-green; transform: scale(1.1); }
+  }
+}

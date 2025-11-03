@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíces Vivas - Iniciar sesión</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Inicia sesión en Raíces Vivas para acceder a tu cuenta y disfrutar de beneficios exclusivos">
+</head>
+<body data-page="login">
+    <!-- HEADER - Igual a tus otras páginas -->
+    <header class="header-principal">
+        <div class="logo-titulo">
+            <img src="../img/logo_probable.png" alt="Logo de Raíces Vivas">
+            <h1>Vivero Sustentable "Raíces Vivas"</h1>
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true">
+        <label for="nav-toggle" class="nav-toggle" aria-label="Abrir/cerrar menú" role="button">
+            <span></span><span></span><span></span>
+        </label>
+        
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="login.html" class="activo">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DEL LOGIN -->
+    <main id="contenido">
+        <section class="seccion-login">
+            <div class="contenedor-login">
+                <h2>Iniciar sesión</h2>
+                
+                <form id="form-login" class="formulario-login">
+                    <div class="grupo-formulario">
+                        <label for="usuario">Usuario</label>
+                        <input 
+                            type="text" 
+                            id="usuario" 
+                            name="usuario" 
+                            placeholder="Tu nombre de usuario" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="grupo-formulario">
+                        <label for="contrasena">Contraseña</label>
+                        <input 
+                            type="password" 
+                            id="contrasena" 
+                            name="contrasena" 
+                            placeholder="Tu contraseña" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="grupo-formulario">
+                        <button type="submit" class="boton-login">
+                            Ingresar
+                        </button>
+                    </div>
+                    
+                    <div class="opciones-login">
+                        <div class="recuerdame">
+                            <input type="checkbox" id="recuerdame" name="recuerdame">
+                            <label for="recuerdame">Recordar mi sesión</label>
+                        </div>
+                        
+                        <a href="#" class="olvido-contrasena">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+                </form>
+                
+                <div class="registro-link">
+                    <p>¿No tienes cuenta? <a href="#">Crea una cuenta</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER - Igual a tus otras páginas -->
+    <footer>
+        <p>© 2025 Vivero Raíces Vivas - Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script simple para validación -->
+    <script>
+        document.getElementById('form-login').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío
+            
+            const usuario = document.getElementById('usuario').value;
+            const contrasena = document.getElementById('contrasena').value;
+            
+            if(usuario.trim() === '' || contrasena.trim() === '') {
+                alert('Por favor completa todos los campos');
+                return;
+            }
+            
+            alert('¡Inicio de sesión exitoso!\nBienvenido a Raíces Vivas');
+            
+            // Redirigir a la página principal después de iniciar sesión
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+</html>

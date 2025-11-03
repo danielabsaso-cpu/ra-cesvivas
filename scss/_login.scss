@@ -1,0 +1,119 @@
+// LOGIN PAGE
+[data-page="login"] {
+    .seccion-login {
+        background-color: $lighter-green;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+
+    .contenedor-login {
+        background: $white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        padding: 30px;
+        max-width: 500px;
+        width: 100%;
+        
+        h2 {
+            color: $secondary-green;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+
+    .formulario-login {
+        .grupo-formulario {
+            margin-bottom: 20px;
+            
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 600;
+                color: $primary-green;
+            }
+            
+            input {
+                width: 100%;
+                padding: 12px 15px;
+                border: 1px solid #c8d9c8;
+                border-radius: 6px;
+                background: $light-green;
+                
+                &:focus {
+                    border-color: $accent-green;
+                    outline: none;
+                    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+                }
+            }
+        }
+        
+        .boton-login {
+            background: $accent-green;
+            color: $white;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 25px;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            
+            &:hover {
+                background: $accent-green;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+        }
+        
+        .opciones-login {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            
+            .recuerdame {
+                display: flex;
+                align-items: center;
+                
+                input {
+                    margin-right: 8px;
+                }
+            }
+            
+            .olvido-contrasena {
+                color: $accent-green;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    .registro-link {
+        text-align: center;
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid $white;
+        
+        p {
+            margin-bottom: 0;
+            
+            a {
+                color: $accent-green;
+                font-weight: 600;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

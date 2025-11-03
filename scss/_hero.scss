@@ -1,0 +1,50 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+  background-color: $lighter-green;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .hero-texto {
+    h2 {
+      color: $primary-green;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $light-text;
+    }
+  }
+
+  .hero-img {
+    @include flex-center;
+
+    img {
+      max-width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .hero-img {
+      margin-top: 20px;
+
+      img {
+        max-width: 220px;
+      }
+    }
+  }
+}

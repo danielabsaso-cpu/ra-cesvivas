@@ -1,0 +1,51 @@
+.header-principal {
+position: fixed;
+top: 0; left: 0;
+width: 100%;
+box-sizing: border-box;
+background-color: $primary-green;
+@include flex-between-center;
+padding: 12px 16px;
+padding-right: 24px;
+overflow: visible;
+z-index: 1000;
+box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+flex-wrap: wrap;
+
+.logo-titulo {
+@include flex-start-center;
+gap: 50px;
+flex-shrink: 0;
+img { height: 50px; width: auto; border-radius: 8px; }
+h1 { font-size: 1.6rem; color: $light-green; font-weight: bold; }
+}
+
+.nav-principal {
+margin-left: auto;
+ul {
+display: flex;
+align-items: center;
+gap: 16px;
+list-style: none;
+margin: 0;
+padding: 0;
+flex-wrap: wrap; // evita cortes “justos” en desktop
+}
+a, a:visited {
+display: inline-block;
+color: $white;
+background: $secondary-green; text-decoration: none; font-weight: 700; padding: 10px 16px; border-radius: 999px; transition: background-color 0.3s, transform 0.2s; } a:hover { background: $accent-green; transform: scale(1.04); }
+}
+
+.nav-toggle { // hamburguesa oculta por defecto
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 28px; height: 20px;
+margin-left: 12px;
+cursor: pointer;
+span { display:block; height:3px; width:100%; background:$white; border-radius:3px; }
+}
+
+.nav-checkbox { display: none; }
+}

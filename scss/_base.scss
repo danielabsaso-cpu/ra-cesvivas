@@ -1,0 +1,22 @@
+body, html {
+    font-family: $font-base;
+    background-color: $light-green;
+    color: $dark-text;
+    margin: 0;
+    line-height: $line-height-base;
+    padding-top: 90px;
+    overflow-x: hidden;
+}
+h1, h2, h3 { margin: 0; }
+h2 {
+    text-align: center;
+    margin: 20px 0 10px;
+    color: $primary-green;
+}
+img { max-width: 100%; height: auto; border-radius: 8px; }
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffffffe3;
+    border-radius: 10px;
+}

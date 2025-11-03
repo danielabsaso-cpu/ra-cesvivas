@@ -1,0 +1,17 @@
+.cta {
+  background: linear-gradient(135deg, $primary-green, $accent-green);
+  color: $white; text-align: center; padding: 40px 20px;
+  margin: 40px auto; border-radius: 10px; max-width: 900px;
+
+  h2 { margin-bottom: 15px; color: #69ff55; }
+
+  a {
+    display: inline-block; background: $accent-green; color: $white;
+    padding: 12px 28px; margin-top: 10px; border-radius: 50px;
+    text-decoration: none; font-weight: bold;
+    @include transition-simple;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+    &:hover { background: $secondary-green; transform: scale(1.05); }
+  }
+}

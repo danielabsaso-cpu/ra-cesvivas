@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Raíces Vivas - Contacto</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header-principal">
+        <div class="logo-titulo">
+            <img src="../img/logo_probable.png" alt="Logo de Raíces Vivas">
+            <h1>Vivero Sustentable "Raíces Vivas"</h1>
+        </div>
+        <!-- Toggle hamburguesa -->
+        <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-toggle" aria-label="Abrir/cerrar menú" role="button">
+            <span></span><span></span><span></span>
+        </label>
+        <!-- Menú -->
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+        <section class="seccion-contacto">
+            <div class="contenedor-contacto">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ayudarte. Completa el formulario o visítanos en nuestro vivero.</p>
+                <form action="#" method="post" class="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="boton-contacto">Enviar</button>
+                </form>
+                <h3>Otras formas de contacto</h3>
+                <p>📧 <a href="mailto:info@raicesvivas.com">info@raicesvivas.com</a></p>
+                <p>📞 +54 9 2604-657890</p>
+                <p>📍 Av. Alsina 2145, San Rafael, Mendoza</p>
+            </div>
+        </section>
+        <section class="ubicacion">
+            <h2>¿Dónde nos encontramos?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0080288797486!2d-68.35390433016357!3d-34.60334939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679086b6ca802d7%3A0xc50876cc76804ac5!2sAv%20Alsina%202145%2C%20San%20Rafael%2C%20Provincia%20de%20Mendoza!5e0!3m2!1ses-419!2sar!4v1755346831756!5m2!1ses-419!2sar" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>© 2025 Vivero Raíces Vivas - Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
